@@ -1,0 +1,9 @@
+﻿.env
+*.pem
+*.key
+*.log
+__pycache__/
+.venv/
+venv/
+.vscode/
+.idea/

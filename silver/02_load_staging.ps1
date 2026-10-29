@@ -1,0 +1,1 @@
+docker exec -i postgres-data-engineering psql -U hyacinthe -d data_engineering -c "COPY staging_shipments (shipment_id, order_id, carrier, shipped_at, delivered_at, delivery_status, shipping_cost) FROM STDIN WITH (FORMAT csv, HEADER true)" < ..\shipments.csv
